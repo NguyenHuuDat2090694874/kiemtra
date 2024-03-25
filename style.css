@@ -1,0 +1,82 @@
+/* Định dạng cho phần đầu trang */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Định dạng cho phần chính của trang */
+main {
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+article {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 3; /* Bài viết chiếm phần lớn không gian */
+    margin-right: 20px;
+}
+
+/* Định dạng cho tiêu đề của bài viết */
+article h2 {
+    color: #333;
+}
+
+/* Định dạng cho phần cuối trang */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.image-row {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các hình ảnh theo chiều dọc */
+    justify-content: flex-start;
+    flex: 1; /* Hàng hình ảnh chiếm ít không gian hơn */
+}
+
+.image-row img {
+    margin-bottom: 30px; /* Tạo khoảng cách giữa các hình ảnh */
+    width: 100%; /* Đảm bảo các hình ảnh co giãn đầy đủ chiều rộng của container chứa chúng */
+    height: 100px; /* Giữ tỷ lệ hình ảnh */
+}
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-row-1 {
+    display: flex;
+    justify-content: space-around; /* Điều chỉnh khoảng cách giữa các hình ảnh */
+    align-items: center; /* Căn giữa các hình ảnh theo chiều dọc */
+}
+
+
